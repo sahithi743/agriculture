@@ -1,0 +1,136 @@
+.header {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+  box-shadow: 0 4px 12px rgba(22, 163, 74, 0.15);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 3px solid var(--primary-light);
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+.logo-icon {
+  font-size: 2rem;
+}
+
+.logo-text {
+  color: white;
+  letter-spacing: 0.5px;
+}
+
+.nav {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav a {
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 500;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.nav a:hover {
+  color: white;
+}
+
+.nav a::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--primary-light);
+  transition: width 0.3s ease;
+}
+
+.nav a:hover::after {
+  width: 100%;
+}
+
+.auth-section {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.user-greeting {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.9rem;
+}
+
+.btn-link {
+  padding: 0.5rem 1rem;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-link:hover {
+  color: white;
+}
+
+.btn-primary {
+  padding: 0.5rem 1.5rem;
+  background-color: var(--primary-light);
+  color: white;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border: 2px solid var(--primary-light);
+}
+
+.btn-primary:hover {
+  background-color: white;
+  color: var(--primary);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(22, 163, 74, 0.25);
+}
+
+.btn-logout {
+  padding: 0.5rem 1.5rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.btn-logout:hover {
+  background-color: var(--error);
+  border-color: var(--error);
+}
+
+@media (max-width: 768px) {
+  .header-container {
+    padding: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .nav {
+    gap: 1rem;
+    font-size: 0.9rem;
+  }
+
+  .auth-section {
+    gap: 0.5rem;
+  }
+}

@@ -1,0 +1,409 @@
+.home-page {
+  min-height: 100vh;
+  background-color: var(--background);
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+  color: white;
+  padding: 6rem 2rem;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  opacity: 0.95;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: var(--primary-light);
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: white;
+  color: var(--primary);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(22, 163, 74, 0.3);
+}
+
+.btn-secondary {
+  background-color: var(--accent-light);
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: white;
+  color: var(--accent);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(22, 163, 74, 0.3);
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+.btn-outline:hover {
+  background-color: white;
+  color: var(--primary);
+}
+
+.btn-lg {
+  padding: 1rem 2.5rem;
+  font-size: 1.1rem;
+}
+
+/* Features Section */
+.features-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+.features-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--primary);
+  margin-bottom: 3rem;
+  font-weight: bold;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.feature-card {
+  background-color: var(--surface);
+  padding: 2rem;
+  border-radius: 1rem;
+  text-align: center;
+  border: 1px solid var(--border-light);
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(22, 163, 74, 0.08);
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(22, 163, 74, 0.15);
+  border-color: var(--primary-light);
+}
+
+.feature-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.feature-card h3 {
+  color: var(--primary);
+  font-size: 1.3rem;
+  margin-bottom: 0.75rem;
+}
+
+.feature-card p {
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+/* How It Works */
+.how-it-works {
+  background-color: var(--primary-50);
+  padding: 4rem 2rem;
+}
+
+.how-it-works h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--primary);
+  margin-bottom: 3rem;
+  font-weight: bold;
+}
+
+.steps-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.step {
+  background-color: var(--surface);
+  padding: 2rem;
+  border-radius: 1rem;
+  text-align: center;
+  border: 2px solid var(--primary-200);
+}
+
+.step-number {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0 auto 1rem;
+}
+
+.step h3 {
+  color: var(--text);
+  font-size: 1.2rem;
+  margin-bottom: 0.75rem;
+}
+
+.step p {
+  color: var(--text-light);
+}
+
+/* For Farmers Section */
+.for-farmers {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+.farmers-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.farmers-text h2,
+.buyers-text h2 {
+  font-size: 2.5rem;
+  color: var(--primary);
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
+.benefits-list {
+  list-style: none;
+  margin-bottom: 2rem;
+}
+
+.benefits-list li {
+  font-size: 1.05rem;
+  color: var(--text);
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.farmers-image,
+.buyers-image {
+  text-align: center;
+}
+
+.image-placeholder {
+  font-size: 6rem;
+  background: linear-gradient(135deg, var(--primary-50) 0%, var(--primary-100) 100%);
+  padding: 3rem;
+  border-radius: 1rem;
+  border: 2px solid var(--primary-200);
+}
+
+/* For Buyers Section */
+.for-buyers {
+  background-color: var(--surface);
+  padding: 4rem 2rem;
+}
+
+.for-buyers h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.buyers-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+/* Stats Section */
+.stats-section {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+  padding: 4rem 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.stat-card {
+  text-align: center;
+  color: white;
+}
+
+.stat-card h3 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.stat-card p {
+  font-size: 1.1rem;
+  opacity: 0.95;
+}
+
+/* CTA Section */
+.cta-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  text-align: center;
+  background: linear-gradient(135deg, var(--primary-50) 0%, var(--primary-100) 100%);
+  border-radius: 1rem;
+  border: 2px solid var(--primary-200);
+}
+
+.cta-section h2 {
+  font-size: 2.5rem;
+  color: var(--primary);
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.cta-section p {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--text);
+  color: white;
+  padding: 3rem 2rem 1rem;
+  margin-top: 4rem;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer-section h4 {
+  color: var(--primary-light);
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.footer-section p {
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.6;
+}
+
+.footer-section ul {
+  list-style: none;
+}
+
+.footer-section ul li {
+  margin-bottom: 0.75rem;
+}
+
+.footer-section a {
+  color: rgba(255, 255, 255, 0.8);
+  transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+  color: var(--primary-light);
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.6);
+}
+
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1.1rem;
+  }
+
+  .features-section h2,
+  .how-it-works h2,
+  .farmers-text h2,
+  .buyers-text h2,
+  .cta-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .farmers-content,
+  .buyers-content {
+    grid-template-columns: 1fr;
+  }
+
+  .image-placeholder {
+    font-size: 4rem;
+    padding: 2rem;
+  }
+
+  .stats-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+  }
+
+  .btn-lg {
+    width: 100%;
+  }
+}
